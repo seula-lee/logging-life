@@ -12,7 +12,7 @@
       for(var i=0; i<labels.length; i++){
         var item = labels[i].desc;
     %>
-        <li><%=item%></li>
+        <li><a ng-click="exec('<%=item%>')"><%=item%></a></li>
     <%
       }
     %>
