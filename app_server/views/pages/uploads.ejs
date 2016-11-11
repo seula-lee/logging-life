@@ -1,0 +1,22 @@
+<html ng-app="LoggingLife">
+<head>
+  <% include ../partials/head.ejs %>
+</head>
+<body ng-controller="lifeScent">
+  <div>
+    <img src='<%=src %>' style="max-width:300px;height:auto;"/>
+  <div>
+  <div>
+    <ul>
+    <%
+      for(var i=0; i<labels.length; i++){
+        var item = labels[i].desc;
+    %>
+        <li><%=item%></li>
+    <%
+      }
+    %>
+    </ul>
+  </div>
+</body>
+</html>
